@@ -16,5 +16,5 @@
 		
  2. Minimal requirements:
 		
-		Android 7.1.2 (it works perfectly on it, but you can compile app for you Android version)
+		Android 4.4.2
 		at least one book from official books repo
