@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View _view) {
 				about.setTitle("Text quest engine v 1.0");
-				about.setMessage("Я шестнадцатилетний разработчик из России. Я очень люблю текстовые квесты, поэтому и создал этот движок. Пользуйтесь!");
+				about.setMessage("Я шестнадцатилетний разработчик из России. Я очень люблю текстовые квесты, поэтому и создал этот движок. Особая благодарность моему помощнику RznNike, чьи pull request'ы осень помогли мне в разработке данного приложения. Пользуйтесь!");
 				about.setPositiveButton("Отлично", new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface _dialog, int _which) {
