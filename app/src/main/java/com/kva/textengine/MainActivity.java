@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View _view) {
 				tosite.setAction(Intent.ACTION_VIEW);
-				tosite.setData(Uri.parse("http://4pda.ru/forum/index.php?showtopic=952228"));
+				tosite.setData(Uri.parse("https://github.com/lesnoilis/textengine-books"));
 				startActivity(tosite);
 			}
 		});
@@ -158,11 +158,13 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View _view) {
 				about.setTitle("Text quest engine v 1.0");
-				about.setMessage("Я шестнадцатилетний разработчик из России. Я очень люблю текстовые квесты, поэтому и создал этот движок. Особая благодарность моему помощнику RznNike, чьи pull request'ы осень помогли мне в разработке данного приложения. Пользуйтесь!");
-				about.setPositiveButton("Отлично", new DialogInterface.OnClickListener() {
+				about.setMessage("Я шестнадцатилетний разработчик из России. Я очень люблю текстовые квесты, поэтому и создал этот движок. Особая благодарность моему помощнику RznNike, чьи pull request'ы очень помогли мне в разработке данного приложения. Пользуйтесь!");
+				about.setPositiveButton("Проект на Github", new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface _dialog, int _which) {
-						
+						tosite.setAction(Intent.ACTION_VIEW);
+						tosite.setData(Uri.parse("https://github.com/lesnoilis/textengine"));
+						startActivity(tosite);
 					}
 				});
 				about.setNeutralButton("Я на 4pda", new DialogInterface.OnClickListener() {
@@ -179,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
 						tosite.setAction(Intent.ACTION_VIEW);
 						tosite.setData(Uri.parse("mailto:kvaapps@gmail.com"));
 						tosite.putExtra("subject", "Text engine");
-						tosite.putExtra("body", "Напишите отзыв или сообщите о баге нам");
+						tosite.putExtra("body", "Напишите ваш отзыв, сообщите о баге или ошибке.");
 						startActivity(tosite);
 					}
 				});
