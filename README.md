@@ -22,7 +22,9 @@
  3. Plan of works:
 		
 	-add English localization besides Russian
+	
 	-make normal design
+	
 	-add FAB instead of Download button
 	
  4. Known bugs:
